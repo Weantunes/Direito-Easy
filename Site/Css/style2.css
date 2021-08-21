@@ -1,0 +1,36 @@
+@charset "UTF-8";/*
+background-image: url(jpg/Biblioteca\ USP\ menor.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 1800px; 
+    display: flex; /* deixa uma imagem do lado da outra
+    */
+    
+*{
+
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: rgb(255, 255, 255);
+
+}
+
+header{
+
+    width: 100%;
+    height: 190px;
+    background-color: rgb(184, 147, 20);
+    position: relative;
+}
+main{
+
+    width: 70%;
+    height: 10000px;    
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
+    border: rgb(0, 0, 0);
+}
