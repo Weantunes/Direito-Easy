@@ -1,101 +1,48 @@
 @charset "UTF-8";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 header{
     width: 100%;
-    height: auto;
+    height: 140px;
     display: flex;
     align-items: center;
     background-color: rgb(184, 147, 20);
     flex-wrap: wrap;
-    justify-content: space-between;
 }
-
-
 .barra_pesquisa{   
-    width: ;
-    height: 55px;
+    width: 880px;
+    height: 35px;
     border: solid 7px rgb(144, 115, 19);
-    border-radius: 0.49rem;
-    padding: 0.3rem;
-    font-family:'Arial black', Helvetica, sans-serif;
-    font-size: 1rem;
-}
+    border-radius: 7px;
+    padding: 7px;
+    font-family: 'Arial black', Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0px 0 20px 20px;
+}  
 .button_pesquisar{
-    width: 3.7rem;
-    height: 2.1rem;
-    position:relative;
-    top: 10px;
-    left: -75px;
-    border-radius: 5px; 
+    width: 70px;
+    height: 40px;
+    position: relative;
+    top: 13px;
+    left: -85px;
+    border-radius: 5px;
     border: solid 0;
     background-color: rgb(144, 115, 19);
-    background-image: url(png/Lupa\ transp\ R\,1\ Tm\,30.png);
+    background-image: url("https://www.flaticon.com/br/");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 3rem;
     
 } 
-.barras-hamburguer{
-    position: relative;
-    right: 40px;
-    height: 38px;
-    right: 41px;
-    transition: 0.5s ease-in-out;
-}
-span.hamburguer{ 
-    display: block;
-    position: relative;
-    top: 17px;
-    width: 50px;
-    height: 4px;
-    background: white;
-    
-}
 
-span.hamburguer:after,
-span.hamburguer:before{
-    background: white;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transition: 0.5s ease-in-out;
-}
-
-span.hamburguer:after{
-    top: 17px;
-}
-
-span.hamburguer:before{
-    bottom: 17px;
-}
-
-input:checked ~ label .barras-hamburguer{
-    transform: rotate(45deg);
-}
-input:checked ~ label .hamburguer:after{
-    transform: rotate(90deg);
-    top: 0;
-}
-input:checked ~ label .hamburguer:before{
-    transform: rotate(90deg);
-    bottom: 0;
-}
 .inicio_principal{
-    background-image: url(jpg/Biblioteca\ USP\ compacta.jpg);
+    background-image: url(../imagens/jpg/Biblioteca\ USP\ compacta.jpg);
     display: flex;
     background-position: top left;
     background-repeat: no-repeat;
     background-size: 100%;
     height: 900px;
 }
-.container_transparente{
+.ApresentaçãoBXB{
     order: 2;
     width: 1100px;
     height: 300px;
@@ -105,14 +52,15 @@ input:checked ~ label .hamburguer:before{
     color: white;
     text-align: center;
 }
-h1.apresentação{
+.titulo_apresentação{
     margin: 5px 5px 30px 15px ;
     font: normal 3rem times;
 }   
-p.apresentação{
+.texto_apresentação{
     margin: 5px 5px 10px 15px;
     font: normal 1.5rem times
 }
+
 .area_codigos{
     overflow-y: scroll;
     order: 1;
