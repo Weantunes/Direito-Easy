@@ -1,8 +1,12 @@
 @charset "UTF-8";
 
+span.BreakLine{display: block; margin-top:10px ;}
+a{color: black;}
+
+
 header{
     width: 100%;
-    height: 140px;
+    min-height: 140px;
     display: flex;
     align-items: center;
     background-color: rgb(184, 147, 20);
@@ -33,8 +37,7 @@ header{
     background-size: 3rem;
     
 } 
-
-.inicio_principal{
+.Backgroud{
     background-image: url(../imagens/jpg/Biblioteca\ USP\ compacta.jpg);
     display: flex;
     background-position: top left;
@@ -42,25 +45,24 @@ header{
     background-size: 100%;
     height: 900px;
 }
-.ApresentaçãoBXB{
+.Backgroud_Boxtxt{
+    width: 900px;
+    height: 280px;
     order: 2;
-    width: 1100px;
-    height: 300px;
-    padding: 20px;
-    margin: 50px 40px 0 0 ;
+    padding: 30px 10px;
+    margin: 50px auto;
     background-color: rgba(0, 0, 0, 0.39) ;
     color: white;
     text-align: center;
 }
-.titulo_apresentação{
+#line_title{
     margin: 5px 5px 30px 15px ;
     font: normal 3rem times;
 }   
-.texto_apresentação{
+#line_sentence{
     margin: 5px 5px 10px 15px;
     font: normal 1.5rem times
 }
-
 .area_codigos{
     overflow-y: scroll;
     order: 1;
@@ -70,51 +72,65 @@ header{
     padding: 5px 35px 0 10px ;
     font: normal 1.1rem arial;
     border-top: 10px solid rgb(245, 208, 47);
-    margin: 2rem 2.3rem 0 2rem ;
+    margin: 2rem auto ;
 }
-h3{
-    font-weight: 100;    
-}
-a{  
-    text-decoration: none;
-    color: black;    
-}
-ul{
-    list-style: none;
-    margin: 25px 0 0 15px;
-}
-li{
-    margin: 0 0 13px 0;
-}
-.scroll{
-    overflow: auto; 
-}
-.area_roxa{
+.códigos{margin: 25px 0 0 15px;}
+.códigos > li{margin: 0 0 13px 0;}
+
+.areaInfo{
     width: 100%;
     height: auto;
-    padding: 2rem;
     background-color: rgb(112, 48, 160);
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.Curiosidade{
-    width: 27rem;
-    height: auto;
+.Curiosidade, .boxPrincipais_buscas{
     background-color: rgb(255, 255, 255);
-    border-radius: 4rem;
-    box-shadow: .1rem .1rem .6rem rgba(0, 0, 0, 0.877);  
-    margin: auto;
-    padding: 1.5rem;
+    border-radius: 45px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.877);  
+    margin: 25px;
+    padding: 10px 25px;
 }
-.Curiosidade h3, p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    font-weight: bolder;
-    margin: 0.5rem 0 1rem 0.5rem;
-    justify-content: center;
+.Curiosidade{width: 350px;}
+
+.title_info{
+    font: bolder 1.3em Arial, Helvetica, sans-serif;
+    margin: 8px 0 17px 8px;
 }
-.Curiosidade span{
-    font-family: 'Times New Roman', Times, serif;
-    text-align: right;
+#sentence_curiosi{
+    font: 500 1.2em Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+#Ler_mais{
+    display: block;
+    font: bolder 1.1em sans-serif;
     color: cornflowerblue;
+    text-align: right;
+    margin: 10px;
+}
+.boxPrincipais_buscas{width: 600px;}
+
+.menu{
+    display: grid;
+    
 }
 
+.menu p{
+    /**/
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 8px;
+    background-color: rgb(255, 167, 3);
+}
+.menu > li > a{
+    color: #ffff;
+    font: bolder 1.2em sans-serif;
+}
+
+#perguntaeresposta{
+    background-color: yellow;
+}
