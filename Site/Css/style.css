@@ -5,15 +5,19 @@
 /*Configurações*/
 span.BreakLine{display: block;  margin-top:10px ;}
 a{color: black;}
+hr{
+    margin: 20px 0;
+    height: 3px;
+    background-color: gray;
+    border-radius: 50px;
+}
+.flex{display: flex;}
 
 /*Estilo da Página*/
 header#cabeçalho{
-    width: 100%;
     height: 155px;
     padding: 6px 0 0 20px;
-    
     align-items: center;
-    
     background-color: rgb(184, 147, 20);
 }
 
@@ -39,7 +43,7 @@ header#cabeçalho{
     font-size: 1em;
 }  
 
-.button_pesquisar{
+.button_pesquisa{
     position: relative;
     top: 10.8px;
     left: -85px;
@@ -52,100 +56,227 @@ header#cabeçalho{
     background-color: rgb(144, 115, 19);    
 } 
 
-.Backgroud{
-    background-image: url(../imagens/jpg/Biblioteca\ USP\ compacta.jpg);
+#Backgroud{
+    width: 100%;
+    height: 890px;
     display: flex;
+
+    background-image: url(../imagens/jpg/Biblioteca\ USP\ compacta.jpg);
     background-position: top -50px center;;
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 900px;
 }
-.Backgroud_Boxtxt{
+
+#apresentação{
     width: 900px;
     height: 280px;
     order: 2;
     padding: 30px 10px;
-    margin: 50px auto;
-    background-color: rgba(0, 0, 0, 0.39) ;
+    margin: 60px auto;
+    box-shadow: 1px 1px 18px 5px rgba(0, 0, 0, 0.438);
+    background-color: rgba(0, 0, 0, 0.568);
     color: white;
     text-align: center;
 }
-#line_title{
+
+.line_title{
     margin: 5px 5px 30px 15px ;
     font: normal 3rem times;
-}   
-#line_sentence{
+}  
+
+.line_sentence{
     margin: 5px 5px 10px 15px;
     font: normal 1.5rem times
 }
-.area_codigos{
-    overflow-y: scroll;
+
+#area_codigos{
     order: 1;
-    width: auto;
-    max-height: 800px;
-    background-color: white;
     padding: 5px 35px 0 10px ;
-    font: normal 1.1rem arial;
-    border-top: 10px solid rgb(245, 208, 47);
     margin: 2rem auto ;
+    font: normal 1.1rem arial;
+    overflow-y: scroll;
+    box-shadow: 1px 1px 10px 1.5px rgba(0, 0, 0, 0.226) ;
+    border-top: 10px solid rgb(245, 208, 47);
+    background-color: white;
 }
+
 .códigos{margin: 25px 0 0 15px;}
 .códigos > li{margin: 0 0 13px 0;}
 
-.areaInfo{
-    width: 100%;
-    height: auto;
-    background-color: rgb(112, 48, 160);
+/*Area Roxa*/
+
+section#curiosidade_buscas{
+    position: relative;
+    padding: 25px;
+    
+    max-width: auto;
+    min-height: 360px;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(112, 48, 160);
 }
-.Curiosidade, .boxPrincipais_buscas{
-    background-color: rgb(255, 255, 255);
+
+.box_aredondado{
+    height: 330px;
+    padding: 10px 25px;
     border-radius: 45px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.877);  
-    margin: 25px;
-    padding: 10px 25px;
+    background-color: rgb(255, 255, 255);
 }
-.Curiosidade{width: 350px;}
-
 .title_info{
     font: bolder 1.3em Arial, Helvetica, sans-serif;
     margin: 8px 0 17px 8px;
 }
-#sentence_curiosi{
+.text_curiosi{
     font: 500 1.2em Arial, Helvetica, sans-serif;
     text-align: justify;
 }
-#Ler_mais{
+.ler_mais{
     display: block;
     font: bolder 1.1em sans-serif;
     color: cornflowerblue;
     text-align: right;
     margin: 10px;
 }
-.boxPrincipais_buscas{width: 600px;}
 
-.menu{
+#curiosidade_do_dia{width: 350px; height: 330px; }
+
+#principais_buscas{width: 700px; min-width: 330px; max-width: auto;}
+
+.grid_itens{
+    padding:  30px;
+    align-items: center;
     display: grid;
-    
+    grid-template-columns: auto auto auto;
+    gap: 50px;
 }
 
-.menu p{
-    /**/
-    width: 100px;
-    height: 40px;
+.grid_itens > li > a{
+    display: block;
+    width: 99px;
     text-align: center;
-    border-radius: 15px;
-    padding: 30px;
-    margin: 8px;
+    background-color: yellowgreen;
+    padding: 25px;
+    border-radius: 20px;
+    font: normal bold 1.12em arial;
+    color: white;
     background-color: rgb(255, 167, 3);
 }
-.menu > li > a{
-    color: #ffff;
-    font: bolder 1.2em sans-serif;
+
+#pergunta_resposta{
+    display: flex;
+    justify-content: space-around;
+    height: 135vh;
+    padding: 50px;
+    background-image: url(../imagens/png/Converça.jpg);
+    background-position: top -50px center;;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-#perguntaeresposta{
-    background-color: yellow;
+#box_pergunta_resposta{
+    width: 700px;
+    height: 750px;
+}
+
+.button_pergunta{
+    background-color: #7030A0;
+    color: white;
+    font: normal 900 1em arial;
+    padding: 10px;
+    border-radius: 10px ;
+    border: solid transparent ;
+
+}
+
+section#comentarios{
+    position: relative;
+    overflow-y: scroll;
+    height: 370px;
+}
+
+.box_comentario{
+    font: normal 600 .8em arial;
+    width: 95%;
+    min-height: 100px;
+    max-height: auto;
+    margin: 0 auto 30px auto;
+    border: solid grey;
+    padding: 10px;
+}
+
+.box_comentario > article {
+    margin: 15px;
+}
+
+#rank_advogados  header{
+    align-items: center;
+    gap: 5px;
+    font: normal 900 1em arial;
+}
+
+
+
+/* Rodapé*/
+footer{
+width: 100%;
+height: 100%;   
+background-color: rgb(245, 208, 47);
+}
+
+#menuFooter{
+display: flex;
+justify-content: space-around;
+}
+
+#Logo_footer{
+width: 80px;
+padding: 0;
+margin: 25px auto;
+}
+
+.footertitle{
+font: normal 700 1.5rem 'georama';
+margin-bottom: 35px;
+color: #858585;
+}
+
+.section_footer{
+margin: 30px 0;
+}
+
+#itens_footer{
+margin: 20px 0;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+text-align: left;
+}
+
+a.footer_font{
+font: normal 500 1.05em arial;
+color: #d1d1d1;
+line-height: 40px;
+}
+
+.footer_font{
+font: normal 500 1.05em arial;
+color: #d1d1d1;
+margin-bottom: 25px;
+}
+
+.footer_font:hover{
+    color: white;
+    transition: inherit 0.5s;
+}
+
+#footer_Contato a{ 
+    display: flex;
+}
+
+#copyright > p{
+    margin:  30px 0;
+    padding: 30px;
+    background-color: rgb(241, 227, 19);
+    text-align: center;
 }
